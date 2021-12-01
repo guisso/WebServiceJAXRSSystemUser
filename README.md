@@ -6,7 +6,7 @@ A Jakarta EE JAX-RS web service prototype for didact purposes.
 
 ## URIs for tests
 
-- Records with ids 9001 and 1 are required.
+- *Records with ids 9001 and 1 are required*.
 * http://127.0.0.1:8080/ws/api/resources/user/9001, GET with header "Accept: text/plain".
 * http://127.0.0.1:8080/ws/api/resources/user/9001, GET with header "Accept: application/json".
 * http://127.0.0.1:8080/ws/api/resources/user/9001, GET with header "Accept: application/xml".
@@ -29,7 +29,7 @@ A Jakarta EE JAX-RS web service prototype for didact purposes.
 
 ## Reference
 
-* The source code shown here conforms to Jakarta EE 8.
+* *The source code shown here conforms to Jakarta EE 8*.
 
 The Jakarta EE 9 Tutorial: Introduction to Web Services
 
