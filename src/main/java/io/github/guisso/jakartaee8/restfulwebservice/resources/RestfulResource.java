@@ -71,8 +71,11 @@ public class RestfulResource {
      */
     @POST
     @PUT
+    @Path("messages/{message}")
     @Consumes("text/plain")
-    public void setMessage(String message) {
+    public void setMessage(
+            @PathParam("message") String message) {
+        System.out.println(">> setMessage:" + message);
         RestfulResource.message = message;
     }
 
@@ -82,8 +85,10 @@ public class RestfulResource {
      * @return Retorno de previamente definida por aceso a outro recurso
      */
     @GET
+    @Path("messages")
     @Produces("text/html")
     public String getMessage() {
+        System.out.println(">> getMessage:" + message);
         return "<html><body><h1>"
                 + RestfulResource.message
                 + "</h1></body></html>";
