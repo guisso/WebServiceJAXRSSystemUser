@@ -4,18 +4,18 @@
  * Bacharelado em Ciência da Computação 
  * do IFNMG - Câmpus Montes Claros
  */
-package io.github.guisso.jakartaee8.restfulwebservice.user;
+package io.github.guisso.restfulwebservice.user;
 
-import javax.ejb.Stateless;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+import jakarta.ejb.Stateless;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 
 /**
  * Bean de sessão (EJB) com operações concretas a serem realizadas
- * na entidade usuário do sistema.
+ * na entidade usuário do sistema
  * 
- * @author Luis Guisso <luis dot guisso at ifnmg dot edu dot br>
- * @version 0.1, 26/11/2021
+ * @author Luis Guisso &lt;luis dot guisso at ifnmg dot edu dot br&gt;
+ * @version 0.2, 07/11/2025
  */
 @Stateless
 public class SystemUserServiceBean 

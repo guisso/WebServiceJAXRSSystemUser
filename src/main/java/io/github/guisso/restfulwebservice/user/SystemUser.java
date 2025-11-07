@@ -4,22 +4,22 @@
  * Bacharelado em Ciência da Computação 
  * do IFNMG - Câmpus Montes Claros
  */
-package io.github.guisso.jakartaee8.restfulwebservice.user;
+package io.github.guisso.restfulwebservice.user;
 
 import java.io.Serializable;
 import java.util.UUID;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.xml.bind.annotation.XmlRootElement;
 
 /**
  * Especificação de um usuário do sistema.
  * 
- * @author Luis Guisso <luis dot guisso at ifnmg dot edu dot br>
- * @version 0.1, 26/11/2021
+ * @author Luis Guisso &lt;luis dot guisso at ifnmg dot edu dot br&gt;
+ * @version 0.2, 07/11/2025
  */
 @Entity
 // Introduz a capacidade de processamento do objeto com formato XML
@@ -121,7 +121,7 @@ public class SystemUser implements Serializable {
 
     @Override
     public String toString() {
-        return "io.github.guisso.jakartaee8.restfulwebservice.user.SystemUser[ id=" + id + ", email=" + email + " ]";
+        return "io.github.guisso.restfulwebservice.user.SystemUser[ id=" + id + ", email=" + email + " ]";
     }
     //</editor-fold>
 

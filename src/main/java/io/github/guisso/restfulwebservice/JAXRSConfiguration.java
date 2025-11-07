@@ -4,16 +4,16 @@
  * Bacharelado em Ciência da Computação 
  * do IFNMG - Câmpus Montes Claros
  */
-package io.github.guisso.jakartaee8.restfulwebservice;
+package io.github.guisso.restfulwebservice;
 
-import javax.ws.rs.ApplicationPath;
-import javax.ws.rs.core.Application;
+import jakarta.ws.rs.ApplicationPath;
+import jakarta.ws.rs.core.Application;
 
 /**
  * Configura o contexto do <i>web service</i> na aplicação.
  *
- * @author Luis Guisso <luis dot guisso at ifnmg dot edu dot br>
- * @version 0.1, 26/11/2021
+ * @author Luis Guisso &lt;luis dot guisso at ifnmg dot edu dot br&gt;
+ * @version 0.2, 07/11/2025
  */
 @ApplicationPath("api")
 public class JAXRSConfiguration extends Application {

@@ -4,23 +4,23 @@
  * Bacharelado em Ciência da Computação 
  * do IFNMG - Câmpus Montes Claros
  */
-package io.github.guisso.jakartaee8.restfulwebservice.resources;
+package io.github.guisso.restfulwebservice.resources;
 
-import io.github.guisso.jakartaee8.restfulwebservice.user.SystemUser;
-import javax.inject.Inject;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.DefaultValue;
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.PUT;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import io.github.guisso.jakartaee8.restfulwebservice.user.SystemUserServiceBeanLocal;
-import javax.ws.rs.DELETE;
+import io.github.guisso.restfulwebservice.user.SystemUser;
+import io.github.guisso.restfulwebservice.user.SystemUserServiceBeanLocal;
+import jakarta.inject.Inject;
+import jakarta.ws.rs.Consumes;
+import jakarta.ws.rs.DefaultValue;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.PUT;
+import jakarta.ws.rs.DELETE;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.QueryParam;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
 
 /**
  * Caminhos com ações a serem executadas pelo <i>web service</i>.
@@ -35,8 +35,8 @@ import javax.ws.rs.DELETE;
  * <a href="https://github.com/for-GET/http-decision-diagram">escolha do código
  * HTTP de resposta</a>.</p>
  *
- * @author Luis Guisso <luis dot guisso at ifnmg dot edu dot br>
- * @version 0.1, 26/11/2021
+ * @author Luis Guisso &lt;luis dot guisso at ifnmg dot edu dot br&gt;
+ * @version 0.2, 07/11/2025
  */
 @Path("resources")
 public class RestfulResource {
@@ -53,9 +53,9 @@ public class RestfulResource {
     private SystemUserServiceBeanLocal uSrv;
 
     /**
-     * Teste de escuta do <i>web service</i> por parte do servidor.
+     * Teste de escuta do <i>web service</i> por parte do servidor
      *
-     * @return Texto plano como resposta do acesso ao recurso.
+     * @return Texto plano como resposta do acesso ao recurso
      */
     @GET
     @Path("ping")
@@ -65,9 +65,9 @@ public class RestfulResource {
     }
 
     /**
-     * Especificação de uma mensagem disponível a outro recurso.
+     * Especificação de uma mensagem disponível a outro recurso
      *
-     * @param message Definição de mensagem de teste.
+     * @param message Definição de mensagem de teste
      */
     @POST
     @PUT
@@ -80,7 +80,7 @@ public class RestfulResource {
     }
 
     /**
-     * Recuperação de mensagem de teste previamente definida.
+     * Recuperação de mensagem de teste previamente definida
      *
      * @return Retorno de previamente definida por aceso a outro recurso
      */
@@ -95,10 +95,10 @@ public class RestfulResource {
     }
 
     /**
-     * Retorna conteúdo HTML básico a partir de uma mensagem recebida.
+     * Retorna conteúdo HTML básico a partir de uma mensagem recebida
      *
      * @param msg Mensagem a ser formatada
-     * @return Conteúdo HTML contendo a mensagem formatada.
+     * @return Conteúdo HTML contendo a mensagem formatada
      */
     @GET
     @Path("htmlMessages/{msg}")
@@ -112,11 +112,11 @@ public class RestfulResource {
 
     /**
      * Retorna conteúdo HTML básico a partir de uma mensagem e de uma <i>tag</i>
-     * que a envolverá.
+     * que a envolverá
      *
-     * @param tag Tag HTML que envolverá a mensagem recebida.
-     * @param msg Conteúdo a ser formatado.
-     * @return Conteúdo HTML com mensagem embutida em <i>tag</i> recebida.
+     * @param tag Tag HTML que envolverá a mensagem recebida
+     * @param msg Conteúdo a ser formatado
+     * @return Conteúdo HTML com mensagem embutida em <i>tag</i> recebida
      */
     @GET
     @Path("customHtmlMessages/{msg}")
@@ -131,11 +131,11 @@ public class RestfulResource {
     }
 
     /**
-     * Recupera um usuário do sistema no SGBDR.
+     * Recupera um usuário do sistema no SGBDR
      *
-     * @param id Identificação do usuário do sistema a ser recuperado.
+     * @param id Identificação do usuário do sistema a ser recuperado
      * @return Usuário do sistema em formato JSON (padrão), XML ou texto plano
-     * segundo a solicitação recebida.
+     * segundo a solicitação recebida
      */
     @GET
     @Path("users/{id}")
